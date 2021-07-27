@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21444BFC26272C4600E57935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21444BFB26272C4600E57935 /* AppDelegate.swift */; };
+		21444C0026272C4600E57935 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21444BFF26272C4600E57935 /* ViewController.swift */; };
+		21444C0326272C4600E57935 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21444C0126272C4600E57935 /* Main.storyboard */; };
+		21444C0526272C4900E57935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21444C0426272C4900E57935 /* Assets.xcassets */; };
+		21444C0826272C4900E57935 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21444C0626272C4900E57935 /* LaunchScreen.storyboard */; };
+		21444C1326272C4900E57935 /* ParkingHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21444C1226272C4900E57935 /* ParkingHandlerTests.swift */; };
+		21444C1E26272C4900E57935 /* ParkingHandlerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21444C1D26272C4900E57935 /* ParkingHandlerUITests.swift */; };
+		21444C31262732D600E57935 /* DatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21444C2F262732D600E57935 /* DatePickerCell.swift */; };
+		21444C3B2627330600E57935 /* DatePickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21444C3A2627330600E57935 /* DatePickerCell.xib */; };
+		21444C53262733AF00E57935 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21444C51262733AF00E57935 /* LabelCell.swift */; };
+		21444C54262733AF00E57935 /* LabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21444C52262733AF00E57935 /* LabelCell.xib */; };
+		21444C632627352900E57935 /* PMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21444C622627352900E57935 /* PMViewModel.swift */; };
+		21444C682627353700E57935 /* PMTableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21444C672627353700E57935 /* PMTableManager.swift */; };
+		21444D5D26273A2900E57935 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21444D5C26273A2900E57935 /* UITableView+Extensions.swift */; };
+		21444D6226273E9B00E57935 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21444D6126273E9B00E57935 /* UITableViewCell+Extensions.swift */; };
+		21444D6A2627794A00E57935 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21444D692627794A00E57935 /* SceneDelegate.swift */; };
+		21444D6F2628B28200E57935 /* UIDatePicker+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21444D6E2628B28200E57935 /* UIDatePicker+Extensions.swift */; };
+		21444D7D2628F15700E57935 /* InstructionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21444D7B2628F15700E57935 /* InstructionCell.swift */; };
+		21444D7E2628F15700E57935 /* InstructionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21444D7C2628F15700E57935 /* InstructionCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21444C0F26272C4900E57935 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21444BF026272C4600E57935 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21444BF726272C4600E57935;
+			remoteInfo = ParkingHandler;
+		};
+		21444C1A26272C4900E57935 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21444BF026272C4600E57935 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21444BF726272C4600E57935;
+			remoteInfo = ParkingHandler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21444BF826272C4600E57935 /* ParkingHandler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingHandler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21444BFB26272C4600E57935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21444BFF26272C4600E57935 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21444C0226272C4600E57935 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21444C0426272C4900E57935 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21444C0726272C4900E57935 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21444C0926272C4900E57935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21444C0E26272C4900E57935 /* ParkingHandlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkingHandlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21444C1226272C4900E57935 /* ParkingHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingHandlerTests.swift; sourceTree = "<group>"; };
+		21444C1426272C4900E57935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21444C1926272C4900E57935 /* ParkingHandlerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkingHandlerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21444C1D26272C4900E57935 /* ParkingHandlerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingHandlerUITests.swift; sourceTree = "<group>"; };
+		21444C1F26272C4900E57935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21444C2F262732D600E57935 /* DatePickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerCell.swift; sourceTree = "<group>"; };
+		21444C3A2627330600E57935 /* DatePickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerCell.xib; sourceTree = "<group>"; };
+		21444C51262733AF00E57935 /* LabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
+		21444C52262733AF00E57935 /* LabelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelCell.xib; sourceTree = "<group>"; };
+		21444C622627352900E57935 /* PMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMViewModel.swift; sourceTree = "<group>"; };
+		21444C672627353700E57935 /* PMTableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMTableManager.swift; sourceTree = "<group>"; };
+		21444D5C26273A2900E57935 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		21444D6126273E9B00E57935 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		21444D692627794A00E57935 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../../../../../.Trash/SceneDelegate.swift; sourceTree = "<group>"; };
+		21444D6E2628B28200E57935 /* UIDatePicker+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDatePicker+Extensions.swift"; sourceTree = "<group>"; };
+		21444D7B2628F15700E57935 /* InstructionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionCell.swift; sourceTree = "<group>"; };
+		21444D7C2628F15700E57935 /* InstructionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstructionCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21444BF526272C4600E57935 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21444C0B26272C4900E57935 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21444C1626272C4900E57935 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21444BEF26272C4600E57935 = {
+			isa = PBXGroup;
+			children = (
+				21444BFA26272C4600E57935 /* ParkingHandler */,
+				21444C1126272C4900E57935 /* ParkingHandlerTests */,
+				21444C1C26272C4900E57935 /* ParkingHandlerUITests */,
+				21444BF926272C4600E57935 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21444BF926272C4600E57935 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21444BF826272C4600E57935 /* ParkingHandler.app */,
+				21444C0E26272C4900E57935 /* ParkingHandlerTests.xctest */,
+				21444C1926272C4900E57935 /* ParkingHandlerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21444BFA26272C4600E57935 /* ParkingHandler */ = {
+			isa = PBXGroup;
+			children = (
+				21444BFB26272C4600E57935 /* AppDelegate.swift */,
+				21444D692627794A00E57935 /* SceneDelegate.swift */,
+				21444D5B26273A2900E57935 /* Extension */,
+				21444C5B262734E400E57935 /* TM */,
+				21444C5C262734E400E57935 /* VM */,
+				21444C2E2627329C00E57935 /* Cells */,
+				21444BFF26272C4600E57935 /* ViewController.swift */,
+				21444C0126272C4600E57935 /* Main.storyboard */,
+				21444C0426272C4900E57935 /* Assets.xcassets */,
+				21444C0626272C4900E57935 /* LaunchScreen.storyboard */,
+				21444C0926272C4900E57935 /* Info.plist */,
+			);
+			path = ParkingHandler;
+			sourceTree = "<group>";
+		};
+		21444C1126272C4900E57935 /* ParkingHandlerTests */ = {
+			isa = PBXGroup;
+			children = (
+				21444C1226272C4900E57935 /* ParkingHandlerTests.swift */,
+				21444C1426272C4900E57935 /* Info.plist */,
+			);
+			path = ParkingHandlerTests;
+			sourceTree = "<group>";
+		};
+		21444C1C26272C4900E57935 /* ParkingHandlerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				21444C1D26272C4900E57935 /* ParkingHandlerUITests.swift */,
+				21444C1F26272C4900E57935 /* Info.plist */,
+			);
+			path = ParkingHandlerUITests;
+			sourceTree = "<group>";
+		};
+		21444C2E2627329C00E57935 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				21444C392627330600E57935 /* nibs */,
+				21444C2F262732D600E57935 /* DatePickerCell.swift */,
+				21444C51262733AF00E57935 /* LabelCell.swift */,
+				21444D7B2628F15700E57935 /* InstructionCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		21444C392627330600E57935 /* nibs */ = {
+			isa = PBXGroup;
+			children = (
+				21444C3A2627330600E57935 /* DatePickerCell.xib */,
+				21444C52262733AF00E57935 /* LabelCell.xib */,
+				21444D7C2628F15700E57935 /* InstructionCell.xib */,
+			);
+			path = nibs;
+			sourceTree = "<group>";
+		};
+		21444C5B262734E400E57935 /* TM */ = {
+			isa = PBXGroup;
+			children = (
+				21444C672627353700E57935 /* PMTableManager.swift */,
+			);
+			path = TM;
+			sourceTree = "<group>";
+		};
+		21444C5C262734E400E57935 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				21444C622627352900E57935 /* PMViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		21444D5B26273A2900E57935 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				21444D6126273E9B00E57935 /* UITableViewCell+Extensions.swift */,
+				21444D6E2628B28200E57935 /* UIDatePicker+Extensions.swift */,
+				21444D5C26273A2900E57935 /* UITableView+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21444BF726272C4600E57935 /* ParkingHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21444C2226272C4900E57935 /* Build configuration list for PBXNativeTarget "ParkingHandler" */;
+			buildPhases = (
+				21444BF426272C4600E57935 /* Sources */,
+				21444BF526272C4600E57935 /* Frameworks */,
+				21444BF626272C4600E57935 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParkingHandler;
+			productName = ParkingHandler;
+			productReference = 21444BF826272C4600E57935 /* ParkingHandler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21444C0D26272C4900E57935 /* ParkingHandlerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21444C2526272C4900E57935 /* Build configuration list for PBXNativeTarget "ParkingHandlerTests" */;
+			buildPhases = (
+				21444C0A26272C4900E57935 /* Sources */,
+				21444C0B26272C4900E57935 /* Frameworks */,
+				21444C0C26272C4900E57935 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21444C1026272C4900E57935 /* PBXTargetDependency */,
+			);
+			name = ParkingHandlerTests;
+			productName = ParkingHandlerTests;
+			productReference = 21444C0E26272C4900E57935 /* ParkingHandlerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		21444C1826272C4900E57935 /* ParkingHandlerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21444C2826272C4900E57935 /* Build configuration list for PBXNativeTarget "ParkingHandlerUITests" */;
+			buildPhases = (
+				21444C1526272C4900E57935 /* Sources */,
+				21444C1626272C4900E57935 /* Frameworks */,
+				21444C1726272C4900E57935 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21444C1B26272C4900E57935 /* PBXTargetDependency */,
+			);
+			name = ParkingHandlerUITests;
+			productName = ParkingHandlerUITests;
+			productReference = 21444C1926272C4900E57935 /* ParkingHandlerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21444BF026272C4600E57935 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					21444BF726272C4600E57935 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					21444C0D26272C4900E57935 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 21444BF726272C4600E57935;
+					};
+					21444C1826272C4900E57935 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 21444BF726272C4600E57935;
+					};
+				};
+			};
+			buildConfigurationList = 21444BF326272C4600E57935 /* Build configuration list for PBXProject "ParkingHandler" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21444BEF26272C4600E57935;
+			productRefGroup = 21444BF926272C4600E57935 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21444BF726272C4600E57935 /* ParkingHandler */,
+				21444C0D26272C4900E57935 /* ParkingHandlerTests */,
+				21444C1826272C4900E57935 /* ParkingHandlerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21444BF626272C4600E57935 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21444C0826272C4900E57935 /* LaunchScreen.storyboard in Resources */,
+				21444C0526272C4900E57935 /* Assets.xcassets in Resources */,
+				21444D7E2628F15700E57935 /* InstructionCell.xib in Resources */,
+				21444C0326272C4600E57935 /* Main.storyboard in Resources */,
+				21444C54262733AF00E57935 /* LabelCell.xib in Resources */,
+				21444C3B2627330600E57935 /* DatePickerCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21444C0C26272C4900E57935 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21444C1726272C4900E57935 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21444BF426272C4600E57935 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21444C632627352900E57935 /* PMViewModel.swift in Sources */,
+				21444D5D26273A2900E57935 /* UITableView+Extensions.swift in Sources */,
+				21444D6A2627794A00E57935 /* SceneDelegate.swift in Sources */,
+				21444C682627353700E57935 /* PMTableManager.swift in Sources */,
+				21444D7D2628F15700E57935 /* InstructionCell.swift in Sources */,
+				21444D6226273E9B00E57935 /* UITableViewCell+Extensions.swift in Sources */,
+				21444C0026272C4600E57935 /* ViewController.swift in Sources */,
+				21444BFC26272C4600E57935 /* AppDelegate.swift in Sources */,
+				21444D6F2628B28200E57935 /* UIDatePicker+Extensions.swift in Sources */,
+				21444C53262733AF00E57935 /* LabelCell.swift in Sources */,
+				21444C31262732D600E57935 /* DatePickerCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21444C0A26272C4900E57935 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21444C1326272C4900E57935 /* ParkingHandlerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21444C1526272C4900E57935 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21444C1E26272C4900E57935 /* ParkingHandlerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21444C1026272C4900E57935 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21444BF726272C4600E57935 /* ParkingHandler */;
+			targetProxy = 21444C0F26272C4900E57935 /* PBXContainerItemProxy */;
+		};
+		21444C1B26272C4900E57935 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21444BF726272C4600E57935 /* ParkingHandler */;
+			targetProxy = 21444C1A26272C4900E57935 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21444C0126272C4600E57935 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21444C0226272C4600E57935 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		21444C0626272C4900E57935 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21444C0726272C4900E57935 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21444C2026272C4900E57935 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		21444C2126272C4900E57935 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21444C2326272C4900E57935 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ParkingHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ParkingHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21444C2426272C4900E57935 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ParkingHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ParkingHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		21444C2626272C4900E57935 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ParkingHandlerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ParkingHandlerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParkingHandler.app/ParkingHandler";
+			};
+			name = Debug;
+		};
+		21444C2726272C4900E57935 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ParkingHandlerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ParkingHandlerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParkingHandler.app/ParkingHandler";
+			};
+			name = Release;
+		};
+		21444C2926272C4900E57935 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ParkingHandlerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ParkingHandlerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ParkingHandler;
+			};
+			name = Debug;
+		};
+		21444C2A26272C4900E57935 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ParkingHandlerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ParkingHandlerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ParkingHandler;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21444BF326272C4600E57935 /* Build configuration list for PBXProject "ParkingHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21444C2026272C4900E57935 /* Debug */,
+				21444C2126272C4900E57935 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21444C2226272C4900E57935 /* Build configuration list for PBXNativeTarget "ParkingHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21444C2326272C4900E57935 /* Debug */,
+				21444C2426272C4900E57935 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21444C2526272C4900E57935 /* Build configuration list for PBXNativeTarget "ParkingHandlerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21444C2626272C4900E57935 /* Debug */,
+				21444C2726272C4900E57935 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21444C2826272C4900E57935 /* Build configuration list for PBXNativeTarget "ParkingHandlerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21444C2926272C4900E57935 /* Debug */,
+				21444C2A26272C4900E57935 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21444BF026272C4600E57935 /* Project object */;
+}
